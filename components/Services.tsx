@@ -1,7 +1,6 @@
 'use client';
 
 import React from 'react';
-import Image from 'next/image';
 import { motion } from 'motion/react';
 import { Globe, Megaphone, CreditCard, Layout, Zap, Shield } from 'lucide-react';
 
@@ -59,12 +58,10 @@ export default function Services() {
             >
               <div className="glass rounded-3xl overflow-hidden h-full flex flex-col hover:border-emerald-500/50 transition-all duration-500">
                 <div className="relative h-48 overflow-hidden">
-                  <Image 
+                  <img 
                     src={service.image} 
                     alt={service.title}
-                    fill
-                    sizes="(max-width: 768px) 100vw, 33vw"
-                    className="object-cover transition-transform duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0"
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0"
                   />
                   <div className={`absolute inset-0 bg-gradient-to-t ${service.color} opacity-20 z-10`} />
                 </div>
