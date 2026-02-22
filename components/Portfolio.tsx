@@ -55,11 +55,15 @@ export default function Portfolio() {
               transition={{ delay: i * 0.2 }}
               className="group relative rounded-[2.5rem] overflow-hidden glass border border-white/5 cursor-pointer"
             >
-              <div className="aspect-[16/10] overflow-hidden relative">
+              <div className="aspect-[16/10] overflow-hidden relative bg-white/5">
                 <img 
                   src={project.image} 
                   alt={project.title}
                   className="w-full h-full object-cover object-top transition-[object-position] duration-[5000ms] ease-in-out group-hover:object-bottom"
+                  style={{ maxWidth: '100%', height: 'auto', display: 'block' }}
+                  onError={(e) => {
+                    (e.target as HTMLImageElement).style.display = 'none';
+                  }}
                 />
               </div>
               <div className="p-8 md:p-10 bg-gradient-to-t from-black/80 to-transparent">

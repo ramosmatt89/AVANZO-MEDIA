@@ -65,12 +65,16 @@ export default function About() {
             transition={{ duration: 0.8 }}
             className="relative"
           >
-            <div className="aspect-square rounded-3xl overflow-hidden glass p-4 relative z-10">
+            <div className="aspect-square rounded-3xl overflow-hidden glass p-4 relative z-10 bg-white/5">
               <img 
                 src="https://www.dropbox.com/scl/fi/vuuorxmhoehbhrb8zejsx/Mateus-Ramos.jpg?rlkey=mbf8llo87gh2hpe621zv19y2e&st=37rcqa4i&raw=1" 
                 alt="Mateus Ramos - Fundador Avanzo Media" 
                 className="w-full h-full object-cover rounded-2xl"
+                style={{ maxWidth: '100%', height: 'auto', display: 'block' }}
                 loading="eager"
+                onError={(e) => {
+                  (e.target as HTMLImageElement).style.display = 'none';
+                }}
               />
             </div>
             {/* Decorative Elements */}

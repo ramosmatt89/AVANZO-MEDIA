@@ -57,11 +57,15 @@ export default function Services() {
               className="group relative"
             >
               <div className="glass rounded-3xl overflow-hidden h-full flex flex-col hover:border-emerald-500/50 transition-all duration-500">
-                <div className="relative h-48 overflow-hidden">
+                <div className="relative h-48 overflow-hidden bg-white/5">
                   <img 
                     src={service.image} 
                     alt={service.title}
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0"
+                    style={{ maxWidth: '100%', height: 'auto', display: 'block' }}
+                    onError={(e) => {
+                      (e.target as HTMLImageElement).style.display = 'none';
+                    }}
                   />
                   <div className={`absolute inset-0 bg-gradient-to-t ${service.color} opacity-20 z-10`} />
                 </div>
