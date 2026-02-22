@@ -9,12 +9,12 @@ const projects = [
   {
     title: 'Landing Page Premium',
     category: 'Design & Conversão',
-    image: 'https://www.dropbox.com/scl/fi/c6o3gdxrxq16hrvy46ia9/eletric-site.png?rlkey=yltom56shypbpc5g0cmvohk0f&st=pjizuf1x&raw=1',
+    image: 'https://dl.dropboxusercontent.com/scl/fi/c6o3gdxrxq16hrvy46ia9/eletric-site.png?rlkey=yltom56shypbpc5g0cmvohk0f&raw=1',
   },
   {
     title: 'Checkout Otimizado',
     category: 'Gateway & UX',
-    image: 'https://www.dropbox.com/scl/fi/2efq3bfci4ke3z453l1k2/GTWay.png?rlkey=jmnf53pfx3eluunsv21scyln4&st=4acwl6lv&raw=1',
+    image: 'https://dl.dropboxusercontent.com/scl/fi/2efq3bfci4ke3z453l1k2/GTWay.png?rlkey=jmnf53pfx3eluunsv21scyln4&raw=1',
   },
 ];
 
@@ -63,7 +63,6 @@ export default function Portfolio() {
                   fill
                   sizes="(max-width: 768px) 100vw, 50vw"
                   className="object-cover object-top transition-[object-position] duration-[5000ms] ease-in-out group-hover:object-bottom"
-                  referrerPolicy="no-referrer"
                 />
               </div>
               <div className="p-8 md:p-10 bg-gradient-to-t from-black/80 to-transparent">

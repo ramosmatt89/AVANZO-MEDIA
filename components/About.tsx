@@ -68,12 +68,11 @@ export default function About() {
           >
             <div className="aspect-square rounded-3xl overflow-hidden glass p-4 relative z-10">
               <Image 
-                src="https://www.dropbox.com/scl/fi/vuuorxmhoehbhrb8zejsx/Mateus-Ramos.jpg?rlkey=mbf8llo87gh2hpe621zv19y2e&st=37rcqa4i&raw=1" 
+                src="https://dl.dropboxusercontent.com/scl/fi/vuuorxmhoehbhrb8zejsx/Mateus-Ramos.jpg?rlkey=mbf8llo87gh2hpe621zv19y2e&raw=1" 
                 alt="Mateus Ramos - Fundador Avanzo Media" 
                 fill
                 sizes="(max-width: 768px) 100vw, 50vw"
                 className="object-cover rounded-2xl"
-                referrerPolicy="no-referrer"
                 priority
               />
             </div>
