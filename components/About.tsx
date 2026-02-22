@@ -60,19 +60,21 @@ export default function About() {
           </motion.div>
 
           <motion.div
-            initial={{ opacity: 0, scale: 0.8 }}
+            initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
+            viewport={{ once: true, margin: "-50px" }}
             transition={{ duration: 0.8 }}
             className="relative"
           >
             <div className="aspect-square rounded-3xl overflow-hidden glass p-4 relative z-10">
               <Image 
-                src="https://www.dropbox.com/scl/fi/vuuorxmhoehbhrb8zejsx/Mateus-Ramos.jpg?rlkey=mbf8llo87gh2hpe621zv19y2e&st=37rcqa4i&dl=1" 
+                src="https://www.dropbox.com/scl/fi/vuuorxmhoehbhrb8zejsx/Mateus-Ramos.jpg?rlkey=mbf8llo87gh2hpe621zv19y2e&st=37rcqa4i&raw=1" 
                 alt="Mateus Ramos - Fundador Avanzo Media" 
                 fill
-                className="object-cover rounded-2xl p-4"
+                sizes="(max-width: 768px) 100vw, 50vw"
+                className="object-cover rounded-2xl"
                 referrerPolicy="no-referrer"
+                priority
               />
             </div>
             {/* Decorative Elements */}

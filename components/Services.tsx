@@ -37,7 +37,7 @@ export default function Services() {
           <motion.h2 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            viewport={{ once: true, margin: "-50px" }}
             className="text-4xl md:text-5xl font-display font-bold mb-6"
           >
             As Nossas <span className="text-gradient">Soluções</span>
@@ -53,7 +53,7 @@ export default function Services() {
               key={service.title}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
+              viewport={{ once: true, margin: "-50px" }}
               transition={{ delay: i * 0.2 }}
               className="group relative"
             >
@@ -63,6 +63,7 @@ export default function Services() {
                     src={service.image} 
                     alt={service.title}
                     fill
+                    sizes="(max-width: 768px) 100vw, 33vw"
                     className="object-cover transition-transform duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0"
                     referrerPolicy="no-referrer"
                   />

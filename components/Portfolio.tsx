@@ -9,12 +9,12 @@ const projects = [
   {
     title: 'Landing Page Premium',
     category: 'Design & Conversão',
-    image: 'https://www.dropbox.com/scl/fi/c6o3gdxrxq16hrvy46ia9/eletric-site.png?rlkey=yltom56shypbpc5g0cmvohk0f&st=pjizuf1x&dl=1',
+    image: 'https://www.dropbox.com/scl/fi/c6o3gdxrxq16hrvy46ia9/eletric-site.png?rlkey=yltom56shypbpc5g0cmvohk0f&st=pjizuf1x&raw=1',
   },
   {
     title: 'Checkout Otimizado',
     category: 'Gateway & UX',
-    image: 'https://www.dropbox.com/scl/fi/2efq3bfci4ke3z453l1k2/GTWay.png?rlkey=jmnf53pfx3eluunsv21scyln4&st=4acwl6lv&dl=1',
+    image: 'https://www.dropbox.com/scl/fi/2efq3bfci4ke3z453l1k2/GTWay.png?rlkey=jmnf53pfx3eluunsv21scyln4&st=4acwl6lv&raw=1',
   },
 ];
 
@@ -27,7 +27,7 @@ export default function Portfolio() {
             <motion.h2 
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
+              viewport={{ once: true, margin: "-50px" }}
               className="text-4xl md:text-5xl font-display font-bold mb-4"
             >
               O Nosso <span className="text-gradient">Portfólio</span>
@@ -52,7 +52,7 @@ export default function Portfolio() {
               key={i}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
+              viewport={{ once: true, margin: "-50px" }}
               transition={{ delay: i * 0.2 }}
               className="group relative rounded-[2.5rem] overflow-hidden glass border border-white/5 cursor-pointer"
             >
@@ -61,6 +61,7 @@ export default function Portfolio() {
                   src={project.image} 
                   alt={project.title}
                   fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
                   className="object-cover object-top transition-[object-position] duration-[5000ms] ease-in-out group-hover:object-bottom"
                   referrerPolicy="no-referrer"
                 />
