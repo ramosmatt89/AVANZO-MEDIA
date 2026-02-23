@@ -57,7 +57,7 @@ export default function Portfolio() {
               viewport={{ once: true, margin: "-50px" }}
               transition={{ delay: i * 0.2 }}
               onClick={() => setSelectedProject(project)}
-              className="group relative rounded-[2.5rem] overflow-hidden glass border border-white/5 cursor-pointer"
+              className="group relative rounded-3xl overflow-hidden glass border border-white/5 cursor-pointer"
             >
               <div className="aspect-[16/10] overflow-hidden relative bg-white/5">
                 <Image 
@@ -95,7 +95,7 @@ export default function Portfolio() {
               initial={{ scale: 0.9, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.9, opacity: 0 }}
-              className="relative w-full max-w-5xl h-full max-h-[90vh] glass rounded-3xl overflow-hidden flex flex-col"
+              className="relative w-full max-w-5xl h-full max-h-[90vh] glass rounded-2xl overflow-hidden flex flex-col"
             >
               {/* Modal Header */}
               <div className="p-6 border-b border-white/10 flex items-center justify-between bg-black/50 backdrop-blur-md z-20">
