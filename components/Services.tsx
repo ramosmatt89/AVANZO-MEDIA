@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Image from 'next/image';
 import { motion } from 'motion/react';
 import { Globe, Megaphone, CreditCard, Layout, Zap, Shield } from 'lucide-react';
 
@@ -57,20 +58,14 @@ export default function Services() {
               className="group relative"
             >
               <div className="glass rounded-3xl overflow-hidden h-full flex flex-col hover:border-emerald-500/50 transition-all duration-500">
-                <div className="relative h-48 overflow-hidden bg-white/5 flex items-center justify-center">
-                  <img 
+                <div className="relative h-48 overflow-hidden bg-white/5">
+                  <Image 
                     src={service.image} 
                     alt={service.title}
-                    width="800"
-                    height="600"
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0"
-                    style={{ maxWidth: '100%', height: 'auto' }}
+                    fill
+                    className="object-cover transition-transform duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0"
+                    sizes="(max-width: 768px) 100vw, 33vw"
                     referrerPolicy="no-referrer"
-                    onError={(e) => {
-                      const target = e.target as HTMLImageElement;
-                      target.style.opacity = '0';
-                      target.parentElement?.classList.add('bg-emerald-500/10');
-                    }}
                   />
                   <div className={`absolute inset-0 bg-gradient-to-t ${service.color} opacity-20 z-10`} />
                 </div>

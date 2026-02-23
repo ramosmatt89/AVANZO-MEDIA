@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Image from 'next/image';
 import { motion } from 'motion/react';
 import { MapPin, Phone, Mail } from 'lucide-react';
 
@@ -65,22 +66,18 @@ export default function About() {
             transition={{ duration: 0.8 }}
             className="relative"
           >
-            <div className="aspect-square rounded-3xl overflow-hidden glass p-4 relative z-10 bg-white/5 flex items-center justify-center">
-              <img 
-                src="https://i.ibb.co/Y74j8Jkp/Mateus-Ramos.jpg" 
-                alt="Mateus Ramos - Fundador Avanzo Media" 
-                width="800"
-                height="800"
-                className="w-full h-full object-cover rounded-2xl"
-                style={{ maxWidth: '100%', height: 'auto' }}
-                loading="eager"
-                referrerPolicy="no-referrer"
-                onError={(e) => {
-                  const target = e.target as HTMLImageElement;
-                  target.style.opacity = '0';
-                  target.parentElement?.classList.add('bg-emerald-500/10');
-                }}
-              />
+            <div className="aspect-square rounded-3xl overflow-hidden glass p-4 relative z-10 bg-white/5">
+              <div className="relative w-full h-full rounded-2xl overflow-hidden">
+                <Image 
+                  src="https://i.ibb.co/Y74j8Jkp/Mateus-Ramos.jpg" 
+                  alt="Mateus Ramos - Fundador Avanzo Media" 
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  priority
+                  referrerPolicy="no-referrer"
+                />
+              </div>
             </div>
             {/* Decorative Elements */}
             <div className="absolute -top-10 -right-10 w-40 h-40 bg-emerald-500/20 rounded-full blur-3xl animate-pulse" />

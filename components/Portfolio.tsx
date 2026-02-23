@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
+import Image from 'next/image';
 import { motion, AnimatePresence } from 'motion/react';
 import { ExternalLink, X } from 'lucide-react';
 
@@ -58,20 +59,14 @@ export default function Portfolio() {
               onClick={() => setSelectedProject(project)}
               className="group relative rounded-[2.5rem] overflow-hidden glass border border-white/5 cursor-pointer"
             >
-              <div className="aspect-[16/10] overflow-hidden relative bg-white/5 flex items-start justify-center">
-                <img 
+              <div className="aspect-[16/10] overflow-hidden relative bg-white/5">
+                <Image 
                   src={project.image} 
                   alt={project.title}
-                  width="1200"
-                  height="750"
-                  className="w-full h-full object-cover object-top transition-all duration-[5000ms] ease-in-out group-hover:object-bottom"
-                  style={{ maxWidth: '100%', height: 'auto' }}
+                  fill
+                  className="object-cover object-top transition-all duration-[5000ms] ease-in-out group-hover:object-bottom"
+                  sizes="(max-width: 768px) 100vw, 50vw"
                   referrerPolicy="no-referrer"
-                  onError={(e) => {
-                    const target = e.target as HTMLImageElement;
-                    target.style.opacity = '0';
-                    target.parentElement?.classList.add('bg-emerald-500/10');
-                  }}
                 />
               </div>
               <div className="p-8 md:p-10 bg-gradient-to-t from-black/80 to-transparent">
@@ -122,12 +117,15 @@ export default function Portfolio() {
 
               {/* Scrollable Image Container */}
               <div className="flex-1 overflow-y-auto custom-scrollbar bg-white/5">
-                <div className="w-full">
-                  <img 
+                <div className="relative w-full">
+                  <Image 
                     src={selectedProject.image} 
                     alt={selectedProject.title}
+                    width={1200}
+                    height={2000}
                     className="w-full h-auto block"
                     referrerPolicy="no-referrer"
+                    priority
                   />
                 </div>
               </div>
