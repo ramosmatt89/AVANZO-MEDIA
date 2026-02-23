@@ -9,12 +9,12 @@ const projects = [
   {
     title: 'Landing Page Premium',
     category: 'Design & Conversão',
-    image: 'https://i.ibb.co/GQt37kYT/eletric-site.png',
+    image: 'https://i.ibb.co/5xFfT97Q/eletric-site.webp',
   },
   {
     title: 'Checkout Otimizado',
     category: 'Gateway & UX',
-    image: 'https://i.ibb.co/2Y6M2ttw/GTWay.png',
+    image: 'https://i.ibb.co/0pkyRGNB/GTWay.webp',
   },
 ];
 

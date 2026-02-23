@@ -69,7 +69,7 @@ export default function About() {
             <div className="aspect-square rounded-3xl overflow-hidden glass p-4 relative z-10 bg-white/5">
               <div className="relative w-full h-full rounded-2xl overflow-hidden">
                 <Image 
-                  src="https://i.ibb.co/Y74j8Jkp/Mateus-Ramos.jpg" 
+                  src="https://i.ibb.co/JWJCQHPN/Mateus-Ramos.webp" 
                   alt="Mateus Ramos - Fundador Avanzo Media" 
                   fill
                   className="object-cover"
