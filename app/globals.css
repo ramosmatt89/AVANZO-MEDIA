@@ -7,7 +7,10 @@
 
 @layer utilities {
   .glass {
-    @apply bg-white/5 backdrop-blur-md border border-white/10;
+    @apply bg-white/10 border border-white/10;
+    @supports (backdrop-filter: blur(1px)) {
+      @apply bg-white/5 backdrop-blur-md;
+    }
   }
   
   .neon-glow {

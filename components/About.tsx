@@ -65,15 +65,19 @@ export default function About() {
             transition={{ duration: 0.8 }}
             className="relative"
           >
-            <div className="aspect-square rounded-3xl overflow-hidden glass p-4 relative z-10 bg-white/5">
+            <div className="aspect-square rounded-3xl overflow-hidden glass p-4 relative z-10 bg-white/5 flex items-center justify-center">
               <img 
-                src="https://www.dropbox.com/scl/fi/vuuorxmhoehbhrb8zejsx/Mateus-Ramos.jpg?rlkey=mbf8llo87gh2hpe621zv19y2e&st=37rcqa4i&raw=1" 
+                src="https://images.weserv.nl/?url=https://i.ibb.co/Y74j8Jkp/Mateus-Ramos.jpg&w=800&h=800&fit=cover" 
                 alt="Mateus Ramos - Fundador Avanzo Media" 
+                width="800"
+                height="800"
                 className="w-full h-full object-cover rounded-2xl"
-                style={{ maxWidth: '100%', height: 'auto', display: 'block' }}
+                style={{ maxWidth: '100%', height: 'auto' }}
                 loading="eager"
                 onError={(e) => {
-                  (e.target as HTMLImageElement).style.display = 'none';
+                  const target = e.target as HTMLImageElement;
+                  target.style.opacity = '0';
+                  target.parentElement?.classList.add('bg-emerald-500/10');
                 }}
               />
             </div>

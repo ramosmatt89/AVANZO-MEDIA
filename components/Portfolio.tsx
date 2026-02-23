@@ -8,12 +8,12 @@ const projects = [
   {
     title: 'Landing Page Premium',
     category: 'Design & Conversão',
-    image: 'https://www.dropbox.com/scl/fi/c6o3gdxrxq16hrvy46ia9/eletric-site.png?rlkey=yltom56shypbpc5g0cmvohk0f&st=pjizuf1x&raw=1',
+    image: 'https://images.weserv.nl/?url=https://i.ibb.co/GQt37kYT/eletric-site.png&w=1200&fit=cover',
   },
   {
     title: 'Checkout Otimizado',
     category: 'Gateway & UX',
-    image: 'https://www.dropbox.com/scl/fi/2efq3bfci4ke3z453l1k2/GTWay.png?rlkey=jmnf53pfx3eluunsv21scyln4&st=4acwl6lv&raw=1',
+    image: 'https://images.weserv.nl/?url=https://i.ibb.co/2Y6M2ttw/GTWay.png&w=1200&fit=cover',
   },
 ];
 
@@ -55,14 +55,18 @@ export default function Portfolio() {
               transition={{ delay: i * 0.2 }}
               className="group relative rounded-[2.5rem] overflow-hidden glass border border-white/5 cursor-pointer"
             >
-              <div className="aspect-[16/10] overflow-hidden relative bg-white/5">
+              <div className="aspect-[16/10] overflow-hidden relative bg-white/5 flex items-center justify-center">
                 <img 
                   src={project.image} 
                   alt={project.title}
+                  width="1200"
+                  height="750"
                   className="w-full h-full object-cover object-top transition-[object-position] duration-[5000ms] ease-in-out group-hover:object-bottom"
-                  style={{ maxWidth: '100%', height: 'auto', display: 'block' }}
+                  style={{ maxWidth: '100%', height: 'auto' }}
                   onError={(e) => {
-                    (e.target as HTMLImageElement).style.display = 'none';
+                    const target = e.target as HTMLImageElement;
+                    target.style.opacity = '0';
+                    target.parentElement?.classList.add('bg-emerald-500/10');
                   }}
                 />
               </div>
