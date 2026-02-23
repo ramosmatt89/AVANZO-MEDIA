@@ -59,12 +59,13 @@ export default function Services() {
               <div className="glass rounded-3xl overflow-hidden h-full flex flex-col hover:border-emerald-500/50 transition-all duration-500">
                 <div className="relative h-48 overflow-hidden bg-white/5 flex items-center justify-center">
                   <img 
-                    src={`https://images.weserv.nl/?url=${encodeURIComponent(service.image)}&w=800&h=600&fit=cover`} 
+                    src={service.image} 
                     alt={service.title}
                     width="800"
                     height="600"
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0"
                     style={{ maxWidth: '100%', height: 'auto' }}
+                    referrerPolicy="no-referrer"
                     onError={(e) => {
                       const target = e.target as HTMLImageElement;
                       target.style.opacity = '0';

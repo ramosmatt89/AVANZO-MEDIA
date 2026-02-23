@@ -67,13 +67,14 @@ export default function About() {
           >
             <div className="aspect-square rounded-3xl overflow-hidden glass p-4 relative z-10 bg-white/5 flex items-center justify-center">
               <img 
-                src="https://images.weserv.nl/?url=https://i.ibb.co/Y74j8Jkp/Mateus-Ramos.jpg&w=800&h=800&fit=cover" 
+                src="https://i.ibb.co/Y74j8Jkp/Mateus-Ramos.jpg" 
                 alt="Mateus Ramos - Fundador Avanzo Media" 
                 width="800"
                 height="800"
                 className="w-full h-full object-cover rounded-2xl"
                 style={{ maxWidth: '100%', height: 'auto' }}
                 loading="eager"
+                referrerPolicy="no-referrer"
                 onError={(e) => {
                   const target = e.target as HTMLImageElement;
                   target.style.opacity = '0';
