@@ -17,8 +17,8 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-display font-black tracking-tight mb-4 md:mb-4 leading-tight">
-            AVANZO <span className="text-gradient">MEDIA</span>
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-display font-black tracking-tight mb-4 md:mb-4 leading-tight py-2">
+            AVANZO <span className="text-gradient text-emerald-400">MEDIA</span>
           </h1>
           <p className="text-lg md:text-xl lg:text-2xl text-white/60 max-w-2xl mx-auto mb-6 md:mb-8 font-light leading-relaxed">
             Soluções em <span className="text-white font-medium">Websites</span>, 

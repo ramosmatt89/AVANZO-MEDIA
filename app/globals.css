@@ -19,7 +19,14 @@
   }
   
   .text-gradient {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-emerald-400 to-cyan-400;
+    @apply bg-gradient-to-r from-emerald-400 to-cyan-400;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    display: inline-block;
   }
 
   .custom-scrollbar::-webkit-scrollbar {
