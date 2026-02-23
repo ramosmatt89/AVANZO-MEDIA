@@ -16,7 +16,19 @@ const outfit = Outfit({
 
 export const metadata: Metadata = {
   title: 'Avanzo Media | Websites, Anúncios & Gateways',
-  description: 'Agência premium de tecnologia e marketing digital em Lisboa.',
+  description: 'Agência premium de tecnologia e marketing digital em Lisboa. Especialistas em websites de alta performance, anúncios online e gateways de pagamento.',
+  keywords: ['marketing digital', 'websites', 'lisboa', 'anúncios online', 'gateways de pagamento', 'ia', 'tecnologia'],
+  authors: [{ name: 'Mateus Ramos' }],
+  viewport: 'width=device-width, initial-scale=1, maximum-scale=1',
+  themeColor: '#050505',
+  openGraph: {
+    title: 'Avanzo Media | Websites, Anúncios & Gateways',
+    description: 'Agência premium de tecnologia e marketing digital em Lisboa.',
+    url: 'https://avanzomedia.com',
+    siteName: 'Avanzo Media',
+    locale: 'pt_PT',
+    type: 'website',
+  },
 };
 
 export default function RootLayout({children}: {children: React.ReactNode}) {
