@@ -11,9 +11,9 @@ export default function Home() {
     <main className="relative">
       <Navbar />
       <Hero />
-      <About />
       <Services />
       <Portfolio />
+      <About />
       <ContactForm />
       <Footer />
     </main>

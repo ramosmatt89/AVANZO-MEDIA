@@ -6,9 +6,9 @@ import { Menu, X } from 'lucide-react';
 
 const navLinks = [
   { name: 'Início', href: '#home' },
-  { name: 'Sobre', href: '#about' },
   { name: 'Serviços', href: '#services' },
   { name: 'Portfólio', href: '#portfolio' },
+  { name: 'Sobre', href: '#about' },
   { name: 'Contacto', href: '#contact' },
 ];
 
@@ -20,7 +20,7 @@ export default function Navbar() {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
     };
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 

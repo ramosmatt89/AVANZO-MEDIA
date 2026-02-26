@@ -52,6 +52,15 @@
   }
 }
 
+section {
+  content-visibility: auto;
+  contain-intrinsic-size: 1px 500px;
+}
+
+#home {
+  content-visibility: visible;
+}
+
 body {
   @apply font-sans;
 }

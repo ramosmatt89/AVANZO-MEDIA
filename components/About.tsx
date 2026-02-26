@@ -73,8 +73,9 @@ export default function About() {
                   alt="Mateus Ramos - Fundador Avanzo Media" 
                   fill
                   className="object-cover"
-                  sizes="(max-width: 768px) 100vw, 50vw"
+                  sizes="(max-width: 768px) 100vw, 40vw"
                   priority
+                  quality={85}
                   referrerPolicy="no-referrer"
                 />
               </div>

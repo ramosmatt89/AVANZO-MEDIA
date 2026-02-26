@@ -34,6 +34,10 @@ export const metadata: Metadata = {
 export default function RootLayout({children}: {children: React.ReactNode}) {
   return (
     <html lang="pt" className={`${inter.variable} ${outfit.variable} scroll-smooth`}>
+      <head>
+        <link rel="preconnect" href="https://i.ibb.co" crossOrigin="anonymous" />
+        <link rel="preconnect" href="https://images.unsplash.com" crossOrigin="anonymous" />
+      </head>
       <body className="bg-[#050505] text-white antialiased selection:bg-emerald-500/30 selection:text-emerald-200" suppressHydrationWarning>
         {children}
       </body>
