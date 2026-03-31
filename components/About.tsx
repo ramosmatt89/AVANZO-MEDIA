@@ -74,8 +74,7 @@ export default function About() {
                   fill
                   className="object-cover"
                   sizes="(max-width: 768px) 100vw, 40vw"
-                  priority
-                  quality={85}
+                  quality={75}
                   referrerPolicy="no-referrer"
                 />
               </div>

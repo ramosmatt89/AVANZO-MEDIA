@@ -63,10 +63,9 @@ export default function Portfolio() {
                   alt={project.title}
                   fill
                   className="object-cover object-top transition-all duration-[6000ms] ease-in-out group-hover:object-bottom"
-                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   referrerPolicy="no-referrer"
-                  priority={i === 0}
-                  quality={80}
+                  quality={75}
                 />
                 <div className="absolute top-4 right-4 z-20">
                   <div className="w-10 h-10 rounded-full bg-black/50 backdrop-blur-md border border-white/20 flex items-center justify-center text-white group-hover:bg-emerald-500 group-hover:border-emerald-400 transition-all duration-300">

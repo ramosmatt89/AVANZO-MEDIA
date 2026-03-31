@@ -21,10 +21,10 @@ const services = [
     color: 'from-blue-500 to-cyan-500'
   },
   {
-    title: 'Gateways de Pagamento',
-    description: 'Integração de sistemas de pagamento seguros e eficientes para e-commerce e serviços.',
-    icon: CreditCard,
-    image: 'https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&q=80&w=800',
+    title: 'Gestão de Reputação Google',
+    description: 'Proteção de marca com filtragem de feedback e automatização de avaliações no Google.',
+    icon: Shield,
+    image: 'https://i.ibb.co/cKqbhpDv/Gemini-Generated-Image-v784v6v784v6v784.png',
     color: 'from-purple-500 to-indigo-500'
   }
 ];
@@ -64,10 +64,9 @@ export default function Services() {
                     alt={service.title}
                     fill
                     className="object-cover transition-transform duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0"
-                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     referrerPolicy="no-referrer"
-                    priority={i === 0}
-                    quality={75}
+                    quality={70}
                   />
                   <div className={`absolute inset-0 bg-gradient-to-t ${service.color} opacity-20 z-10`} />
                 </div>
