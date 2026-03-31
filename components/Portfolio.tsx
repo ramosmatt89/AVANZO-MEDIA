@@ -66,6 +66,7 @@ export default function Portfolio() {
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   referrerPolicy="no-referrer"
                   quality={75}
+                  priority={i === 0}
                 />
                 <div className="absolute top-4 right-4 z-20">
                   <div className="w-10 h-10 rounded-full bg-black/50 backdrop-blur-md border border-white/20 flex items-center justify-center text-white group-hover:bg-emerald-500 group-hover:border-emerald-400 transition-all duration-300">

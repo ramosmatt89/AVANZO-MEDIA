@@ -67,6 +67,7 @@ export default function Services() {
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     referrerPolicy="no-referrer"
                     quality={70}
+                    priority={i === 0}
                   />
                   <div className={`absolute inset-0 bg-gradient-to-t ${service.color} opacity-20 z-10`} />
                 </div>
