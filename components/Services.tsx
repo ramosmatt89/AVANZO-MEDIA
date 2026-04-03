@@ -61,7 +61,7 @@ export default function Services() {
                 <div className="relative h-48 overflow-hidden bg-white/5">
                   <Image 
                     src={service.image} 
-                    alt={service.title}
+                    alt={`${service.title} em Lisboa - Avanzo Media`} 
                     fill
                     className="object-cover transition-transform duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0"
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"

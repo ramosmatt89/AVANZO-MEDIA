@@ -60,7 +60,7 @@ export default function Portfolio() {
               <div className="relative aspect-[3/4] rounded-2xl overflow-hidden glass border border-white/10 mb-6 bg-white/5">
                 <Image 
                   src={project.image} 
-                  alt={project.title}
+                  alt={`Projeto ${project.title} - Website Profissional em Lisboa`} 
                   fill
                   className="object-cover object-top transition-all duration-[6000ms] ease-in-out group-hover:object-bottom"
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"

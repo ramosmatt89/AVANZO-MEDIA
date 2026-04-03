@@ -8,7 +8,7 @@ const navLinks = [
   { name: 'Início', href: '#home' },
   { name: 'Serviços', href: '#services' },
   { name: 'Portfólio', href: '#portfolio' },
-  { name: 'StarShield', href: '#starshield' },
+  { name: 'LocScale', href: '#locscale' },
   { name: 'Sobre', href: '#about' },
   { name: 'Contacto', href: '#contact' },
 ];

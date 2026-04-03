@@ -70,7 +70,7 @@ export default function About() {
               <div className="relative w-full h-full rounded-2xl overflow-hidden">
                 <Image 
                   src="https://i.ibb.co/JWJCQHPN/Mateus-Ramos.webp" 
-                  alt="Mateus Ramos - Fundador Avanzo Media" 
+                  alt="Mateus Ramos - Especialista em Marketing Digital e IA em Lisboa" 
                   fill
                   className="object-cover"
                   sizes="(max-width: 768px) 100vw, 40vw"

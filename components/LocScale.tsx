@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { motion } from 'motion/react';
 import { QrCode, Smartphone, Star, ArrowRight, AlertCircle, LayoutDashboard, ShieldCheck } from 'lucide-react';
 
-export default function StarShield() {
+export default function LocScale() {
   const steps = [
     {
       icon: QrCode,
@@ -28,7 +28,7 @@ export default function StarShield() {
   ];
 
   return (
-    <section id="starshield" className="py-24 bg-black relative overflow-hidden">
+    <section id="locscale" className="py-24 bg-black relative overflow-hidden">
       {/* Background Accents */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
         <div className="absolute -top-24 -left-24 w-96 h-96 bg-emerald-500/10 blur-[120px] rounded-full" />
@@ -44,7 +44,7 @@ export default function StarShield() {
             className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-sm font-medium mb-6"
           >
             <ShieldCheck className="w-4 h-4" />
-            <span>Tecnologia StarShield</span>
+            <span>Tecnologia LocScale</span>
           </motion.div>
           
           <motion.h2
@@ -54,7 +54,7 @@ export default function StarShield() {
             transition={{ delay: 0.1 }}
             className="text-4xl md:text-6xl font-display font-bold mb-6"
           >
-            StarShield: O Filtro Inteligente <br />
+            LocScale: O Filtro Inteligente <br />
             <span className="text-gradient">Contra Avaliações Negativas</span>
           </motion.h2>
           
@@ -119,7 +119,7 @@ export default function StarShield() {
                 <div className="relative w-full h-full rounded-2xl overflow-hidden">
                   <Image
                     src="https://i.ibb.co/qYJJLhKd/Gemini-Generated-Image-nb6qicnb6qicnb6q.jpg"
-                    alt="StarShield Interface"
+                    alt="LocScale - Gestão de Reputação e Avaliações Google em Lisboa"
                     fill
                     className="object-cover"
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
@@ -136,7 +136,7 @@ export default function StarShield() {
                 <div className="relative w-full h-full rounded-2xl overflow-hidden">
                   <Image
                     src="https://i.ibb.co/GfXYVSRH/Captura-de-Tela-2026-03-31-a-s-12-32-41.png"
-                    alt="StarShield Dashboard"
+                    alt="LocScale Dashboard - Aumento de Avaliações Google para Negócios em Lisboa"
                     fill
                     className="object-cover"
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
